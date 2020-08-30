@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dram Machine</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <div id="drum-machine">
+                <h1>Drum Machine</h1>
+                <div id="display"></div>
+                <div id="sound-buttons">
+                    <button id="Chord_1"     onclick="playSound('Q'); document.getElementById('display').innerHTML = 'Chord 1'" class="drum-pad"  type="button"><audio class="clip" src="sounds/Chord_1.mp3" id="Q"></audio>Q</button>
+                    <button id="Chord_2"     onclick="playSound('W'); document.getElementById('display').innerHTML = 'Chord 2'" class="drum-pad"  type="button"><audio class="clip" src="sounds/Chord_2.mp3" id="W"></audio>W</button>
+                    <button id="Chord_3"     onclick="playSound('E'); document.getElementById('display').innerHTML = 'Chord 3'" class="drum-pad"  type="button"><audio class="clip" src="sounds/Chord_3.mp3" id="E"></audio>E</button>
+                    <button id="Shaker"      onclick="playSound('A'); document.getElementById('display').innerHTML = 'Shaker'" class="drum-pad"  type="button"><audio class="clip" src="sounds/Give_us_a_light.mp3" id="A"></audio>A</button>
+                    <button id="Open_HH"     onclick="playSound('S'); document.getElementById('display').innerHTML = 'Open HH'" class="drum-pad"  type="button"><audio class="clip" src="sounds/Dry_Ohh.mp3" id="S"></audio>S</button>
+                    <button id="Closed_HH"   onclick="playSound('D'); document.getElementById('display').innerHTML = 'Closed HH'" class="drum-pad"  type="button"><audio class="clip" src="sounds/Bld_H1.mp3" id="D"></audio>D</button>
+                    <button id="Kick"        onclick="playSound('Z'); document.getElementById('display').innerHTML = 'Kick'" class="drum-pad"  type="button"><audio class="clip" src="sounds/punchy_kick_1.mp3" id="Z"></audio>Z</button>
+                    <button id="Snare_1"     onclick="playSound('X'); document.getElementById('display').innerHTML = 'Snare 1'" class="drum-pad"  type="button"><audio class="clip" src="sounds/side_stick_1.mp3" id="X"></audio>X</button>
+                    <button id="Snare_2"     onclick="playSound('C'); document.getElementById('display').innerHTML = 'Snare 2'" class="drum-pad"  type="button"><audio class="clip" src="sounds/Brk_Snr.mp3" id="C"></audio>C</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
